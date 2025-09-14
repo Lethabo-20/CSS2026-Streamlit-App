@@ -1,4 +1,4 @@
-# EDAB6808_Assignment 1(Group 3): Lead-Lag Indicators in Stock Market Predictions
+# EDAB6808 Assignment 1: Lead-Lag Indicators in Stock Market Predictions
 Assignment 1 for EDAB6808: Lead-Lag Analysis of Yahoo Finance and Google Trends data using time series and machine learning models
 
 **Group Members**
