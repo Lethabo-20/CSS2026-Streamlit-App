@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title("Contact Information")
-
+st.sidebar.write("Contact Info")
 st.write("Let's connect! I am open to collaborations and professional opportunities.")
 
 st.markdown("""
