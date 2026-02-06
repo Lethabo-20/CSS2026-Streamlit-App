@@ -12,7 +12,7 @@ if page == "Home":
     
     col1, col2 = st.columns([1, 2])
     with col1:
-        st.image("https://via.placeholder.com/300") # Placeholder for your photo
+        st.image("download (2).jpg") # Placeholder for your photo
     with col2:
         st.write("### Introduction")
         st.write("""
@@ -35,6 +35,7 @@ elif page == "Projects":
     
     st.write(f"### {selected_project}")
     if selected_project == "Balancing Imabalanced datasets using AI Project":
+        st.write("Pending research project details.")
     else:
         st.write("Details for this academic project will be updated soon.")
 
