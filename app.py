@@ -9,16 +9,22 @@ st.sidebar.write("BCom Honours Student | Business & Financial Analytics")
 st.title("Welcome to my e-Portfolio")
 st.markdown("---")
 
-col1, col2 = st.columns([1, 2])
+col1, col2 = st.columns([1, 2], gap="large")
+
 with col1:
-    st.image("download (2).jpg") # Main Profile Image
+    # Use a placeholder or your GitHub image path
+    st.image("https://via.placeholder.com/350", caption="Lethabo Phalime")
 
 with col2:
-    st.header("About Me")
+    st.header("Professional Profile")
     st.write("""
-    I am a Bachelor of Commerce Honours student specializing in **Business and Financial Analytics** at the University of the Free State. This portfolio reflects my journey in bridging the gap 
-    between complex data and actionable financial insights.
+    Welcome to my e-Portfolio. I am an aspiring data professional currently completing my 
+    Honours degree at the **University of the Free State**. 
     
-    My focus lies in using cutting-edge analytical tools to solve real-world economic problems 
-    and identifying patterns that drive strategic decision-making.
+    My academic journey is centered on bridging the gap between raw data and strategic 
+    financial decision-making. I am passionate about:
+    * **Analytical Problem Solving:** Turning complex datasets into actionable insights.
+    * **Technology & Innovation:** Exploring Data Science, Python, and SASL datasets.
+    * **Financial Modeling:** Understanding market trends and economic indicators.
     """)
+    st.info("💡 'Turning data into insight and insight into action.'")
