@@ -1,46 +1,26 @@
 import streamlit as st
 
-# 1. Page Configuration
-st.set_page_config(page_title="Researcher Profile", layout="wide")
+st.set_page_config(page_title="Lethabo Phalime e-Portfolio", layout="wide")
 
-# 2. Sidebar Navigation (Matching the Screenshot)
-st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to:", ["Profile", "Publications", "STEM Data Explorer", "Contact"])
+# Sidebar for common info
+st.sidebar.image("https://via.placeholder.com/150") # Replace with your GitHub photo link
+st.sidebar.title("Lethabo C. Phalime")
+st.sidebar.write("BCom Honours Student | Business & Financial Analytics")
 
-# 3. Content for "Profile" Page
-if page == "Profile":
-    st.header("Researcher Profile")
+st.title("Welcome to my e-Portfolio")
+st.markdown("---")
+
+col1, col2 = st.columns([1, 2])
+with col1:
+    st.image("https://via.placeholder.com/300") # Main Profile Image
+
+with col2:
+    st.header("About Me")
+    st.write("""
+    I am a Bachelor of Commerce Honours student specializing in **Business and Financial Analytics** at the University of the Free State. This portfolio reflects my journey in bridging the gap 
+    between complex data and actionable financial insights.
     
-    # Create two columns: one for image, one for text
-    col1, col2 = st.columns([1, 2])
-    
-    with col1:
-        # Replace the URL with your own photo uploaded to GitHub
-        st.image("https://via.placeholder.com/300", caption="Lethabo Chantel Phalime")
-    
-    with col2:
-        st.subheader("Lethabo Chantel Phalime")
-        st.write("**Field:** Data Science & Computing")
-        st.write("**Institution:** University of the Free State (UFS)")
-        st.write("**Role:** Researcher")
-        
-        st.write("I am a computing academic with interests in:")
-        st.markdown("""
-        * Data science and analysis
-        * South African Sign Language (SASL) Place Names
-        * Quantum computing
-        * Linux and file management
-        """)
-
-# 4. Placeholders for other pages
-elif page == "Publications":
-    st.title("Publications")
-    st.write("List your research papers and symposium presentations here.")
-
-elif page == "STEM Data Explorer":
-    st.title("STEM Data Explorer")
-    st.write("This is where your data visualizations will go.")
-
-elif page == "Contact":
-    st.title("Contact")
-    st.write("How people can reach you.")
+    My focus lies in using cutting-edge analytical tools to solve real-world economic problems 
+    and identifying patterns that drive strategic decision-making.
+    """)
+    st.success("Current Focus: Data Science, SASL Dataset Preparation, and Financial Modeling.")
