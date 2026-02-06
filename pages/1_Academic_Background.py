@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(page_title="Academic Background", layout="wide")
-
+st.sidebar.write("Academic Background")
 st.title("Academic Background")
 
 with st.expander("University of the Free State", expanded=True):
