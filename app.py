@@ -1,4 +1,6 @@
-Setup the Sidebar Navigation
+import streamlit as st
+
+# 1. Setup the Sidebar Navigation
 st.sidebar.title("Portfolio Navigation")
 page = st.sidebar.radio("Select a Section:", 
     ["Home", "Academic Background", "Projects", "Contact Details"])
