@@ -13,7 +13,7 @@ col1, col2 = st.columns([1, 2], gap="large")
 
 with col1:
     # Use a placeholder or your GitHub image path
-    st.image("")
+    st.image("download (2).jpg")
 
 with col2:
     st.header("Professional Profile")
