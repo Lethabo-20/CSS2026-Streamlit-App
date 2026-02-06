@@ -4,7 +4,7 @@ st.set_page_config(page_title="Lethabo Phalime e-Portfolio", layout="wide")
 
 # Sidebar for common info
 st.sidebar.title("Lethabo C. Phalime")
-st.sidebar.write("BCom Honours Student | Business & Financial Analytics")
+st.sidebar.write("Introduction")
 
 st.title("Welcome to my e-Portfolio")
 st.markdown("---")
@@ -27,4 +27,4 @@ with col2:
     * **Technology & Innovation:** Exploring Data Science, Python, and SASL datasets.
     * **Financial Modeling:** Understanding market trends and economic indicators.
     """)
-    st.info("💡 'Turning data into insight and insight into action.'")
+    st.info("💡Turning data into insight and insight into action.")
