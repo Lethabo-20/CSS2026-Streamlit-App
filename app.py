@@ -1,30 +1,43 @@
-import streamlit as st
+Setup the Sidebar Navigation
+st.sidebar.title("Portfolio Navigation")
+page = st.sidebar.radio("Select a Section:", 
+    ["Home", "Academic Background", "Projects", "Contact Details"])
 
-st.set_page_config(page_title="Lethabo Phalime e-Portfolio", layout="wide")
-
-# Sidebar for common info
-st.sidebar.title("Lethabo C. Phalime")
-st.sidebar.write("Introduction")
-
-st.title("Welcome to my e-Portfolio")
-st.markdown("---")
-
-col1, col2 = st.columns([1, 2], gap="large")
-
-with col1:
-    # Use a placeholder or your GitHub image path
-    st.image("download (2).jpg")
-
-with col2:
-    st.header("Professional Profile")
-    st.write("""
-    Welcome to my e-Portfolio. I am an aspiring data professional currently completing my 
-    Honours degree at the **University of the Free State**. 
+# 2. THE HOME PAGE
+if page == "Home":
+    st.title("Lethabo Chantel Phalime")
+    st.subheader("BCom Honours: Business and Financial Analytics")
     
-    My academic journey is centered on bridging the gap between raw data and strategic 
-    financial decision-making. I am passionate about:
-    * **Analytical Problem Solving:** Turning complex datasets into actionable insights.
-    * **Technology & Innovation:** Exploring Data Science, Python, and SASL datasets.
-    * **Financial Modeling:** Understanding market trends and economic indicators.
-    """)
-    st.info("💡Turning data into insight and insight into action.")
+    col1, col2 = st.columns([1, 2])
+    with col1:
+        st.image("https://via.placeholder.com/300") # Placeholder for your photo
+    with col2:
+        st.write("### Introduction")
+        st.write("""
+        Welcome to my e-Portfolio. I am a student at the University of the Free State 
+        specializing in data-driven financial insights.
+        """)
+
+# 3. THE ACADEMIC PAGE
+elif page == "Academic Background":
+    st.title("🎓 Academic Background")
+    st.write("### University of the Free State")
+    st.write("- Bachelor of Commerce Honours in Business and Financial Analytics")
+    st.info("Key Focus: Advanced Business Analytics, Econometrics, and Data Science.")
+
+# 4. THE PROJECTS PAGE
+elif page == "Projects":
+    st.title("📂 Research & Projects")
+    project_list = ["Lead-Lag Analysis", "Anomaly Detection", "SASL Place Name Project"]
+    selected_project = st.selectbox("View Project Details:", project_list)
+    
+    st.write(f"### {selected_project}")
+    if selected_project == "Balancing Imabalanced datasets using AI Project":
+    else:
+        st.write("Details for this academic project will be updated soon.")
+
+# 5. THE CONTACT PAGE
+elif page == "Contact Details":
+    st.title("✉️ Contact Information")
+    st.write("LinkedIn: [Lethabo Chantel Phalime](http://www.linkedin.com/in/lethabochantelphalime-a64661245)")
+    st.write("GitHub: [Lethabo-20](https://github.com/Lethabo-20)")
