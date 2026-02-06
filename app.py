@@ -5,6 +5,7 @@ st.set_page_config(page_title="Lethabo Phalime e-Portfolio", layout="wide")
 # Sidebar for common info
 st.sidebar.title("Lethabo C. Phalime")
 st.sidebar.write("Introduction")
+st.sidebar.write(1_Academic_Background.py)
 
 st.title("Welcome to my e-Portfolio")
 st.markdown("---")
