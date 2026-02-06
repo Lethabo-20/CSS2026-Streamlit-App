@@ -23,4 +23,3 @@ with col2:
     My focus lies in using cutting-edge analytical tools to solve real-world economic problems 
     and identifying patterns that drive strategic decision-making.
     """)
-    st.success("Current Focus: Data Science, SASL Dataset Preparation, and Financial Modeling.")
