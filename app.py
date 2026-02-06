@@ -3,7 +3,6 @@ import streamlit as st
 st.set_page_config(page_title="Lethabo Phalime e-Portfolio", layout="wide")
 
 # Sidebar for common info
-st.sidebar.image("download (2).jpg") # Replace with your GitHub photo link
 st.sidebar.title("Lethabo C. Phalime")
 st.sidebar.write("BCom Honours Student | Business & Financial Analytics")
 
@@ -12,7 +11,7 @@ st.markdown("---")
 
 col1, col2 = st.columns([1, 2])
 with col1:
-    st.image("https://via.placeholder.com/300") # Main Profile Image
+    st.image("download (2).jpg") # Main Profile Image
 
 with col2:
     st.header("About Me")
