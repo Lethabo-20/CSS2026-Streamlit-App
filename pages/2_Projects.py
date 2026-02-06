@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(page_title="Projects", layout="wide")
-
+st.sidebar.write("Research & Projects")
 st.title("📂 Research & Projects")
 st.write("Click below to view the details of my various academic and research projects.")
 
